@@ -10,7 +10,6 @@
     "build": "webpack --mode production",
     "format": "prettier --write \"*{.html,.css,.js}\" .",
     "lint:js": "eslint --fix --ext index.js",
-    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "author": "Mike P.",
