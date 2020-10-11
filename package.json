@@ -1,0 +1,34 @@
+{
+  "name": "lesson8",
+  "homepage": "http://mike-pinchuk.github.io/js-app-movie",
+  "version": "1.0.0",
+  "description": "My home task",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open --hot",
+    "dev": "webpack --mode development --watch",
+    "build": "webpack --mode production",
+    "format": "prettier --write \"*{.html,.css,.js}\" .",
+    "lint:js": "eslint --fix --ext index.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "author": "Mike P.",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "css-loader": "^4.3.0",
+    "eslint": "^7.9.0",
+    "gh-pages": "^3.1.0",
+    "html-webpack-plugin": "^4.5.0",
+    "postcss": "^8.1.1",
+    "postcss-loader": "^4.0.2",
+    "prettier": "^2.1.2",
+    "style-loader": "^1.2.1",
+    "stylelint": "^13.7.1",
+    "ts-loader": "^8.0.4",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
